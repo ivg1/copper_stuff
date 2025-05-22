@@ -1,0 +1,2 @@
+/gamemode creative
+/give @s copper_stuff:copper_sword
