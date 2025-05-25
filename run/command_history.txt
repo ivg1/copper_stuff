@@ -1,2 +1,20 @@
 /gamemode creative
 /give @s copper_stuff:copper_sword
+/gamemode survival
+/gamemode spectator
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/weather
+/weather clear
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative

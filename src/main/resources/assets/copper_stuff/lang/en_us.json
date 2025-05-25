@@ -1,3 +1,12 @@
 {
-  "item.copper_stuff.copper_sword": "Copper Sword"
+  "item.copper_stuff.copper_sword": "Copper Sword",
+  "item.copper_stuff.copper_pickaxe": "Copper Pickaxe",
+  "item.copper_stuff.copper_axe": "Copper Axe",
+  "item.copper_stuff.copper_hoe": "Copper Hoe",
+  "item.copper_stuff.copper_shovel": "Copper Shovel",
+
+  "item.copper_stuff.copper_helmet": "Copper Helmet",
+  "item.copper_stuff.copper_chestplate": "Copper Chestplate",
+  "item.copper_stuff.copper_leggings": "Copper Leggings",
+  "item.copper_stuff.copper_boots": "Copper Boots"
 }
