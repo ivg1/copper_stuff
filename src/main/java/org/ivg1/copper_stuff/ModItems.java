@@ -1,30 +1,34 @@
 package org.ivg1.copper_stuff;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ToolMaterial;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.item.equipment.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import net.minecraft.item.Items;
 
 import java.util.Map;
 
 import static org.ivg1.copper_stuff.Copper_stuff.MOD_ID;
 
 public class ModItems {
-    private ModItems() {}
+    private ModItems() {
+    }
 
     //give material to copper tools
     public static final ToolMaterial COPPER_TOOL_MATERIAL = new ToolMaterial(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
             300,
-            12.0F,
+            7.0F,
             2.5F,
-            22,
-            ToolMaterial.WOOD.repairItems()
+            20,
+            ToolMaterial.IRON.repairItems()
     );
 
     // Register copper sword
@@ -71,14 +75,14 @@ public class ModItems {
                 BASE_DURABILITY,
                 Map.of(
                         EquipmentType.HELMET, 3,
-                        EquipmentType.CHESTPLATE, 8,
-                        EquipmentType.LEGGINGS, 6,
+                        EquipmentType.CHESTPLATE, 6,
+                        EquipmentType.LEGGINGS, 5,
                         EquipmentType.BOOTS, 3
                 ),
                 5,
                 SoundEvents.ITEM_ARMOR_EQUIP_GOLD,
-                0.0F,
-                0.0F,
+                1.0F,
+                0.025F,
                 ArmorMaterials.IRON.repairIngredient(),
                 COPPER_ARMOR_MATERIAL_KEY
         );
@@ -128,7 +132,51 @@ public class ModItems {
             )
     );
 
+    //random things
+    //register copper nugget
+    public static final Item COPPER_NUGGET = register(
+            "copper_nugget",
+            settings -> new Item(settings.maxCount(64)),
+            new Item.Settings()
+    );
 
+    //register op copper weapons (for fun)
+    public static final ToolMaterial OP_COPPER_TOOL_MATERIAL = new ToolMaterial(
+            BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
+            400,
+            60.0f,
+            80.0f,
+            40,
+            ToolMaterial.IRON.repairItems()
+    );
+
+    //register op copper sword
+    public static final Item OP_COPPER_SWORD = register(
+            "op_copper_sword",
+            settings -> new Item(settings.sword(OP_COPPER_TOOL_MATERIAL, 0.0f, 0.0f)),
+            new Item.Settings()
+    );
+
+    //register op copper pickaxe
+    public static final Item OP_COPPER_PICKAXE = register(
+            "op_copper_pickaxe",
+            settings -> new Item(settings.pickaxe(OP_COPPER_TOOL_MATERIAL, 0.0f, 0.0f)),
+            new Item.Settings()
+    );
+
+    //register op copper axe
+    public static final Item OP_COPPER_AXE = register(
+            "op_copper_axe",
+            settings -> new Item(settings.axe(OP_COPPER_TOOL_MATERIAL, 0.0f, 0.0f)),
+            new Item.Settings()
+    );
+
+    //register key to op weapons
+    public static final Item OP_WEAPONS_UNLOCKER = register(
+            "op_weapons_unlocker",
+            settings -> new Item(settings.maxCount(1)),
+            new Item.Settings()
+    );
 
     //register items function
     private static Item register(String path, java.util.function.Function<Item.Settings, Item> factory, Item.Settings settings) {
@@ -138,6 +186,6 @@ public class ModItems {
 
     //when called, add items to groups
     public static void initialize() {
-        ModItemsGroupAdding.initialize();
+        ModItemGroups.registerItemGroups();
     }
 }

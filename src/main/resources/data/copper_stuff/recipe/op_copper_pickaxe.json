@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    " S ",
+    " O "
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "S": "minecraft:stick",
+    "O": "copper_stuff:op_weapons_unlocker"
+  },
+  "result": {
+    "id": "copper_stuff:op_copper_pickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "SDS",
+    "CSC"
+  ],
+  "key": {
+    "C": "minecraft:copper_block",
+    "D": "minecraft:dragon_head",
+    "S": "minecraft:orange_shulker_box"
+  },
+  "result": {
+    "id": "copper_stuff:op_weapons_unlocker",
+    "count": 1
+  }
+}

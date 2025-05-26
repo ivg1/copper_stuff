@@ -8,5 +8,12 @@
   "item.copper_stuff.copper_helmet": "Copper Helmet",
   "item.copper_stuff.copper_chestplate": "Copper Chestplate",
   "item.copper_stuff.copper_leggings": "Copper Leggings",
-  "item.copper_stuff.copper_boots": "Copper Boots"
+  "item.copper_stuff.copper_boots": "Copper Boots",
+
+  "item.copper_stuff.copper_nugget": "Copper Nugget",
+
+  "item.copper_stuff.op_weapons_unlocker": "OP Weapons Unlocker",
+  "item.copper_stuff.op_copper_sword": "OP Copper Sword",
+  "item.copper_stuff.op_copper_axe": "OP Copper Axe",
+  "item.copper_stuff.op_copper_pickaxe": "OP Copper Pickaxe"
 }

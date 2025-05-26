@@ -18,3 +18,29 @@
 /gamemode creative
 /gamemode survival
 /gamemode creative
+/time set day
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/give @s minecraft:stick 64
+/time set day
+/gamemode survival
+/give @s copper_stuff:copper_axe
+/time set day
+/time set 1000
+/gamemode creative
+/give @s copper_stuff:copper_coin
+/gamemode survival
+/gamemode creative
+/give @s copper_stuff:op_copper_sword
+/time set day
+/gamemode survival
+/give @s copper_stuff:op_
+/give @s copper_stuff:op_copper_axe
+/summon minecraft:iron_golem
+/give @s minecraft:iron_ingot 128
+/effect give @s minecraft:saturation infinite
+/effect give @s minecraft:saturation infinite 1 true
+/time set day
+/give @s copper_stuff:op_weapons_unlocker

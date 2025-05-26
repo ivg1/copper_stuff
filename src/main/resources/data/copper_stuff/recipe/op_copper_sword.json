@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "C",
+    "O"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "O": "copper_stuff:op_weapons_unlocker"
+  },
+  "result": {
+    "id": "copper_stuff:op_copper_sword",
+    "count": 1
+  }
+}

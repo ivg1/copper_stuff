@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "copper_stuff:item/op_copper_sword"
+  }
+}
