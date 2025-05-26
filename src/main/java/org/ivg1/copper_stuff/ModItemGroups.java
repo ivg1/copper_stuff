@@ -41,7 +41,6 @@ public class ModItemGroups {
 
                             //more copper stuff
                             entries.add(COPPER_NUGGET);
-                            entries.add(COPPER_COIN);
 
                             entries.add(OP_COPPER_AXE);
                             entries.add(OP_COPPER_PICKAXE);
